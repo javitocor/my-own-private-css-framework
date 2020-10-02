@@ -55,7 +55,6 @@ $grid--breakpoints: (
   'xxlar':  1400px,
   'xxxlar': 1600px,
 );
-
 $gutter-size:(25px);
 
 .row {
@@ -351,6 +350,19 @@ $border:(top, right, bottom, left);
       border-#{$i}-style: #{$j};
     }
   }
+}
+
+$decoration:(none, underline, overline, line-through);
+
+@mixin decor($decoration) {
+  @each $i in $decoration {
+    &-#{$i} {
+      text-decoration: $i;
+    }
+  }
+}
+.text-decoration {
+  @include decor($decoration);
 }
 
 
