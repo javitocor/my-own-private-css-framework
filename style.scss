@@ -1,0 +1,37 @@
+$dark: rgb(44, 39, 39);
+$light: rgb(196, 189, 189);
+$info: rgb(85, 85, 238);
+$danger: rgb(250, 15, 15);
+$success: rgb(61, 224, 61);
+
+$colors:($dark, $light, $info, $danger, $success);
+
+.a {background-color: red;height: 150px;width: 100%;}
+
+@for $i from 1 through 12 {
+  .col-#{$i} { 
+    float: left;
+    width: 100%/12 * $i;
+    height: 100vh;
+  }
+}
+
+@for $i from 1 through 6 {
+  $base: 4;
+  $fontsize: $base * $i;
+  .font-#{$fontsize} { 
+      font-size: $fontsize + 0px;
+    }
+}
+
+@each $name, $color in $colors {
+  .bg-#{$name} {
+   background-color: $color;
+  }
+}
+
+@each $color in $colors {
+  .text-#{$color} {
+   color: $color;
+  }
+}
