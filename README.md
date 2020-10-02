@@ -19,20 +19,19 @@
 [![Issues][issues-shield]][issues-url]
 ![Hireable](https://cdn.rawgit.com/hiendv/hireable/master/styles/default/yes.svg)
 
-# EVENT-MANAGER
+# MY OWN PRIVATE CSS FRAMEWORK
 
-> Event manager project to practice serialization. Built with RUBY following the requirements in The Odin Project.
+> CSS framework, built with SASS, final project of the HTML & CSS section of The Odin Project.
 
 Additional description about the project and its features.
 
 ## Built With
 
-- RUBY
-
+- SASS
 
 ## Getting Started
 
-- Clone the repo and run `ruby lib/event_manager.rb`
+- Clone the repo and enjoy the framework
 
 
 ## Authors
@@ -46,7 +45,7 @@ Additional description about the project and its features.
 
 Contributions, issues and feature requests are welcome!
 
-Feel free to check the [issues page](https://github.com/javitocor/javitocor/Event-Manager-Ruby/issues).
+Feel free to check the [issues page](https://github.com/javitocor/javitocor/my-own-private-css-framework/issues).
 
 ## Show your support
 
@@ -63,11 +62,11 @@ This project is [MIT](lic.url) licensed.
 
 <!-- MARKDOWN LINKS & IMAGES -->
 <!-- https://www.markdownguide.org/basic-syntax/#reference-style-links -->
-[contributors-shield]: https://img.shields.io/github/contributors/javitocor/javitocor/Event-Manager-Ruby.svg?style=flat-square
-[contributors-url]: https://github.com/javitocor/javitocor/Event-Manager-Ruby/graphs/contributors
-[forks-shield]: https://img.shields.io/github/forks/javitocor/javitocor/Event-Manager-Ruby.svg?style=flat-square
-[forks-url]: https://github.com/javitocor/javitocor/Event-Manager-Ruby/network/members
-[stars-shield]: https://img.shields.io/github/stars/javitocor/javitocor/Event-Manager-Ruby.svg?style=flat-square
-[stars-url]: https://github.com/javitocor/javitocor/Event-Manager-Ruby/stargazers
-[issues-shield]: https://img.shields.io/github/issues/javitocor/javitocor/Event-Manager-Ruby.svg?style=flat-square
-[issues-url]: https://github.com/javitocor/javitocor/Event-Manager-Ruby/issues
+[contributors-shield]: https://img.shields.io/github/contributors/javitocor/javitocor/my-own-private-css-framework.svg?style=flat-square
+[contributors-url]: https://github.com/javitocor/javitocor/my-own-private-css-framework/graphs/contributors
+[forks-shield]: https://img.shields.io/github/forks/javitocor/javitocor/my-own-private-css-framework.svg?style=flat-square
+[forks-url]: https://github.com/javitocor/javitocor/my-own-private-css-framework/network/members
+[stars-shield]: https://img.shields.io/github/stars/javitocor/javitocor/my-own-private-css-framework.svg?style=flat-square
+[stars-url]: https://github.com/javitocor/javitocor/my-own-private-css-framework/stargazers
+[issues-shield]: https://img.shields.io/github/issues/javitocor/javitocor/my-own-private-css-framework.svg?style=flat-square
+[issues-url]: https://github.com/javitocor/javitocor/my-own-private-css-framework/issues
