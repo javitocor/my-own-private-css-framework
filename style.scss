@@ -80,13 +80,13 @@ $grid--breakpoints: (
 }
 
 @for $i from 1 through 4 {
-  .w-#{$i} { 
+  .w-#{$i * 25} { 
     width: 25% * $i;
   }
 }
 
 @for $i from 1 through 4 {
-  .h-#{$i} { 
+  .h-#{$i * 25} { 
     height: 25% * $i;
   }
 }
@@ -125,7 +125,7 @@ $font-weight:(light: 200, normal: 400, bold: 700, bolder: 900);
 
 $display:(flex, block, inline, inline-block, table, grid, none, inline-flex, table-cell);
 
-@mixin display($disp) {
+@mixin display($display) {
   @each $i in $display {
     &-#{$i} {
       display: $i;
@@ -163,7 +163,7 @@ $fixed:(top, bottom);
 
 $margin:(top, right, bottom, left, main);
 
-@mixin marPad($margin) {
+@mixin margin($margin) {
   @each $i in $margin {
     @if $i == top {
       @for $j from 1 through 6 {
@@ -205,7 +205,7 @@ $margin:(top, right, bottom, left, main);
 }
 
 .m {
-  @include marPad($margin);
+  @include margin($margin);
 }
 
 
