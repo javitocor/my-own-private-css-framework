@@ -32,17 +32,14 @@ $success: rgb(61, 224, 61);
     }
 }
 
-$colors:(dark: rgb(44, 39, 39), light: rgb(196, 189, 189), info: rgb(85, 85, 238), danger: rgb(250, 15, 15), success: rgb(61, 224, 61));
+$colors:(dark: $dark, light: $light, info: $info, danger: $danger, success: $success);
 
 @each $name, $color in $colors {
   .bg-#{$name} {
    background-color: $color;
   }
-}
-
-@each $name, $color in $colors {
   .text-#{$name} {
-   color: $color;
+    color: $color;
   }
 }
 
@@ -83,6 +80,46 @@ $fixed:(top, bottom);
       position: fixed;
       bottom: 0;
     }
+  }  
+}
+
+$margin:(top, right, bottom, left);
+
+@each $i in $margin {
+  @if $i == top {
+    @for $j from 1 through 6 {
+      $base: 0.5;
+      .mt-#{$j} {
+        margin: $base * $j + 0rem;
+      }
+    }
+  } @else if $i == right {
+    @for $j from 1 through 6 {
+      $base: 0.5;
+      .mr-#{$j} {
+        margin: $base * $j + 0rem;
+      }
+    }
+  } @else if $i == bottom {
+    @for $j from 1 through 6 {
+      $base: 0.5;
+      .mb-#{$j} {
+        margin: $base * $j + 0rem;
+      }
+    }
+  } @else if $i == left {
+    @for $j from 1 through 6 {
+      $base: 0.5;
+      .ml-#{$j} {
+        margin: $base * $j + 0rem;
+      }
+    }
+  } @else {
+    @for $j from 1 through 6 {
+      $base: 0.5;
+      .m-#{$j} {
+        margin: $base * $j + 0rem;
+      }
+    }
   }
-  
 }
