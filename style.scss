@@ -43,6 +43,13 @@ $info: rgb(85, 85, 238);
 $danger: rgb(250, 15, 15);
 $success: rgb(61, 224, 61);
 
+.row {
+  display: flex;
+  flex-wrap: wrap;
+  margin-right: -15px;
+  margin-left: -15px;
+}
+
 @for $i from 1 through 12 {
   .col-#{$i} { 
     float: left;
@@ -90,7 +97,7 @@ $font-weight:(light: 200, normal: 400, bold: 700, bolder: 900);
   }
 }
 
-$display:(flex, block, inline, inline-block, table, grid, none);
+$display:(flex, block, inline, inline-block, table, grid, none, inline-flex, table-cell);
 
 @each $i in $display {
   .d-#{$i} {
@@ -213,7 +220,7 @@ $text-align:(center, right, left, start, end, initial, inherit, capitalize, lowe
     }    
   } @else {
     .text-#{$i} {
-      text-align: $i;      
+      text-align: $i;
     }
   }  
 }
