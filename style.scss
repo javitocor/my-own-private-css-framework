@@ -204,10 +204,16 @@ $padding:(top, right, bottom, left, main);
   }
 }
 
-$text-align:(center, right, left, start, end, initial, inherit);
+$text-align:(center, right, left, start, end, initial, inherit, capitalize, lowercase, uppercase);
 
 @each $i in $text-align {
-  .text-#{$i} {
-    text-align: $i;
-  }
+  @if $i == capitalize or $i == lowercase or $i == uppercase {
+    .text-#{$i} {
+      text-transform: $i;
+    }    
+  } @else {
+    .text-#{$i} {
+      text-align: $i;      
+    }
+  }  
 }

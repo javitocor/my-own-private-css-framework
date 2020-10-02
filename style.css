@@ -410,4 +410,13 @@ table {
 .text-inherit {
   text-align: inherit; }
 
+.text-capitalize {
+  text-transform: capitalize; }
+
+.text-lowercase {
+  text-transform: lowercase; }
+
+.text-uppercase {
+  text-transform: uppercase; }
+
 /*# sourceMappingURL=style.css.map */
