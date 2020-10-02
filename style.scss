@@ -353,6 +353,7 @@ $border:(top, right, bottom, left);
 }
 
 $decoration:(none, underline, overline, line-through);
+$decor-style:(solid, double, wavy, dotted, dashed);
 
 @mixin decor($decoration) {
   @each $i in $decoration {
@@ -363,6 +364,12 @@ $decoration:(none, underline, overline, line-through);
 }
 .text-decoration {
   @include decor($decoration);
+}
+
+@each $i in $decor-style {
+  .text-decor-#{$i} {
+    text-decoration-style: $i;
+  }
 }
 
 
