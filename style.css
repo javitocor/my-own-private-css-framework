@@ -27,70 +27,553 @@ table {
   border-collapse: collapse;
   border-spacing: 0; }
 
+* {
+  box-sizing: border-box; }
+
 .row {
   display: flex;
   flex-wrap: wrap;
   margin-right: -15px;
   margin-left: -15px; }
 
-.col-1 {
+.col-xxxsm-1 {
   float: left;
-  width: 8.3333333333%;
+  width: 31.25px;
   height: 100vh; }
 
-.col-2 {
+.col-xxsm-1 {
   float: left;
-  width: 16.6666666667%;
+  width: 40px;
   height: 100vh; }
 
-.col-3 {
+.col-xsm-1 {
   float: left;
-  width: 25%;
+  width: 55.5833333333px;
   height: 100vh; }
 
-.col-4 {
+.col-sm-1 {
   float: left;
-  width: 33.3333333333%;
+  width: 64px;
   height: 100vh; }
 
-.col-5 {
+.col-med-1 {
   float: left;
-  width: 41.6666666667%;
+  width: 80px;
   height: 100vh; }
 
-.col-6 {
+.col-lar-1 {
   float: left;
-  width: 50%;
+  width: 85.3333333333px;
   height: 100vh; }
 
-.col-7 {
+.col-xlar-1 {
   float: left;
-  width: 58.3333333333%;
+  width: 100px;
   height: 100vh; }
 
-.col-8 {
+.col-xxlar-1 {
   float: left;
-  width: 66.6666666667%;
+  width: 116.6666666667px;
   height: 100vh; }
 
-.col-9 {
+.col-xxxlar-1 {
   float: left;
-  width: 75%;
+  width: 133.3333333333px;
   height: 100vh; }
 
-.col-10 {
+.col-xxxsm-2 {
   float: left;
-  width: 83.3333333333%;
+  width: 62.5px;
   height: 100vh; }
 
-.col-11 {
+.col-xxsm-2 {
   float: left;
-  width: 91.6666666667%;
+  width: 80px;
   height: 100vh; }
 
-.col-12 {
+.col-xsm-2 {
   float: left;
-  width: 100%;
+  width: 111.1666666667px;
+  height: 100vh; }
+
+.col-sm-2 {
+  float: left;
+  width: 128px;
+  height: 100vh; }
+
+.col-med-2 {
+  float: left;
+  width: 160px;
+  height: 100vh; }
+
+.col-lar-2 {
+  float: left;
+  width: 170.6666666667px;
+  height: 100vh; }
+
+.col-xlar-2 {
+  float: left;
+  width: 200px;
+  height: 100vh; }
+
+.col-xxlar-2 {
+  float: left;
+  width: 233.3333333333px;
+  height: 100vh; }
+
+.col-xxxlar-2 {
+  float: left;
+  width: 266.6666666667px;
+  height: 100vh; }
+
+.col-xxxsm-3 {
+  float: left;
+  width: 93.75px;
+  height: 100vh; }
+
+.col-xxsm-3 {
+  float: left;
+  width: 120px;
+  height: 100vh; }
+
+.col-xsm-3 {
+  float: left;
+  width: 166.75px;
+  height: 100vh; }
+
+.col-sm-3 {
+  float: left;
+  width: 192px;
+  height: 100vh; }
+
+.col-med-3 {
+  float: left;
+  width: 240px;
+  height: 100vh; }
+
+.col-lar-3 {
+  float: left;
+  width: 256px;
+  height: 100vh; }
+
+.col-xlar-3 {
+  float: left;
+  width: 300px;
+  height: 100vh; }
+
+.col-xxlar-3 {
+  float: left;
+  width: 350px;
+  height: 100vh; }
+
+.col-xxxlar-3 {
+  float: left;
+  width: 400px;
+  height: 100vh; }
+
+.col-xxxsm-4 {
+  float: left;
+  width: 125px;
+  height: 100vh; }
+
+.col-xxsm-4 {
+  float: left;
+  width: 160px;
+  height: 100vh; }
+
+.col-xsm-4 {
+  float: left;
+  width: 222.3333333333px;
+  height: 100vh; }
+
+.col-sm-4 {
+  float: left;
+  width: 256px;
+  height: 100vh; }
+
+.col-med-4 {
+  float: left;
+  width: 320px;
+  height: 100vh; }
+
+.col-lar-4 {
+  float: left;
+  width: 341.3333333333px;
+  height: 100vh; }
+
+.col-xlar-4 {
+  float: left;
+  width: 400px;
+  height: 100vh; }
+
+.col-xxlar-4 {
+  float: left;
+  width: 466.6666666667px;
+  height: 100vh; }
+
+.col-xxxlar-4 {
+  float: left;
+  width: 533.3333333333px;
+  height: 100vh; }
+
+.col-xxxsm-5 {
+  float: left;
+  width: 156.25px;
+  height: 100vh; }
+
+.col-xxsm-5 {
+  float: left;
+  width: 200px;
+  height: 100vh; }
+
+.col-xsm-5 {
+  float: left;
+  width: 277.9166666667px;
+  height: 100vh; }
+
+.col-sm-5 {
+  float: left;
+  width: 320px;
+  height: 100vh; }
+
+.col-med-5 {
+  float: left;
+  width: 400px;
+  height: 100vh; }
+
+.col-lar-5 {
+  float: left;
+  width: 426.6666666667px;
+  height: 100vh; }
+
+.col-xlar-5 {
+  float: left;
+  width: 500px;
+  height: 100vh; }
+
+.col-xxlar-5 {
+  float: left;
+  width: 583.3333333333px;
+  height: 100vh; }
+
+.col-xxxlar-5 {
+  float: left;
+  width: 666.6666666667px;
+  height: 100vh; }
+
+.col-xxxsm-6 {
+  float: left;
+  width: 187.5px;
+  height: 100vh; }
+
+.col-xxsm-6 {
+  float: left;
+  width: 240px;
+  height: 100vh; }
+
+.col-xsm-6 {
+  float: left;
+  width: 333.5px;
+  height: 100vh; }
+
+.col-sm-6 {
+  float: left;
+  width: 384px;
+  height: 100vh; }
+
+.col-med-6 {
+  float: left;
+  width: 480px;
+  height: 100vh; }
+
+.col-lar-6 {
+  float: left;
+  width: 512px;
+  height: 100vh; }
+
+.col-xlar-6 {
+  float: left;
+  width: 600px;
+  height: 100vh; }
+
+.col-xxlar-6 {
+  float: left;
+  width: 700px;
+  height: 100vh; }
+
+.col-xxxlar-6 {
+  float: left;
+  width: 800px;
+  height: 100vh; }
+
+.col-xxxsm-7 {
+  float: left;
+  width: 218.75px;
+  height: 100vh; }
+
+.col-xxsm-7 {
+  float: left;
+  width: 280px;
+  height: 100vh; }
+
+.col-xsm-7 {
+  float: left;
+  width: 389.0833333333px;
+  height: 100vh; }
+
+.col-sm-7 {
+  float: left;
+  width: 448px;
+  height: 100vh; }
+
+.col-med-7 {
+  float: left;
+  width: 560px;
+  height: 100vh; }
+
+.col-lar-7 {
+  float: left;
+  width: 597.3333333333px;
+  height: 100vh; }
+
+.col-xlar-7 {
+  float: left;
+  width: 700px;
+  height: 100vh; }
+
+.col-xxlar-7 {
+  float: left;
+  width: 816.6666666667px;
+  height: 100vh; }
+
+.col-xxxlar-7 {
+  float: left;
+  width: 933.3333333333px;
+  height: 100vh; }
+
+.col-xxxsm-8 {
+  float: left;
+  width: 250px;
+  height: 100vh; }
+
+.col-xxsm-8 {
+  float: left;
+  width: 320px;
+  height: 100vh; }
+
+.col-xsm-8 {
+  float: left;
+  width: 444.6666666667px;
+  height: 100vh; }
+
+.col-sm-8 {
+  float: left;
+  width: 512px;
+  height: 100vh; }
+
+.col-med-8 {
+  float: left;
+  width: 640px;
+  height: 100vh; }
+
+.col-lar-8 {
+  float: left;
+  width: 682.6666666667px;
+  height: 100vh; }
+
+.col-xlar-8 {
+  float: left;
+  width: 800px;
+  height: 100vh; }
+
+.col-xxlar-8 {
+  float: left;
+  width: 933.3333333333px;
+  height: 100vh; }
+
+.col-xxxlar-8 {
+  float: left;
+  width: 1066.6666666667px;
+  height: 100vh; }
+
+.col-xxxsm-9 {
+  float: left;
+  width: 281.25px;
+  height: 100vh; }
+
+.col-xxsm-9 {
+  float: left;
+  width: 360px;
+  height: 100vh; }
+
+.col-xsm-9 {
+  float: left;
+  width: 500.25px;
+  height: 100vh; }
+
+.col-sm-9 {
+  float: left;
+  width: 576px;
+  height: 100vh; }
+
+.col-med-9 {
+  float: left;
+  width: 720px;
+  height: 100vh; }
+
+.col-lar-9 {
+  float: left;
+  width: 768px;
+  height: 100vh; }
+
+.col-xlar-9 {
+  float: left;
+  width: 900px;
+  height: 100vh; }
+
+.col-xxlar-9 {
+  float: left;
+  width: 1050px;
+  height: 100vh; }
+
+.col-xxxlar-9 {
+  float: left;
+  width: 1200px;
+  height: 100vh; }
+
+.col-xxxsm-10 {
+  float: left;
+  width: 312.5px;
+  height: 100vh; }
+
+.col-xxsm-10 {
+  float: left;
+  width: 400px;
+  height: 100vh; }
+
+.col-xsm-10 {
+  float: left;
+  width: 555.8333333333px;
+  height: 100vh; }
+
+.col-sm-10 {
+  float: left;
+  width: 640px;
+  height: 100vh; }
+
+.col-med-10 {
+  float: left;
+  width: 800px;
+  height: 100vh; }
+
+.col-lar-10 {
+  float: left;
+  width: 853.3333333333px;
+  height: 100vh; }
+
+.col-xlar-10 {
+  float: left;
+  width: 1000px;
+  height: 100vh; }
+
+.col-xxlar-10 {
+  float: left;
+  width: 1166.6666666667px;
+  height: 100vh; }
+
+.col-xxxlar-10 {
+  float: left;
+  width: 1333.3333333333px;
+  height: 100vh; }
+
+.col-xxxsm-11 {
+  float: left;
+  width: 343.75px;
+  height: 100vh; }
+
+.col-xxsm-11 {
+  float: left;
+  width: 440px;
+  height: 100vh; }
+
+.col-xsm-11 {
+  float: left;
+  width: 611.4166666667px;
+  height: 100vh; }
+
+.col-sm-11 {
+  float: left;
+  width: 704px;
+  height: 100vh; }
+
+.col-med-11 {
+  float: left;
+  width: 880px;
+  height: 100vh; }
+
+.col-lar-11 {
+  float: left;
+  width: 938.6666666667px;
+  height: 100vh; }
+
+.col-xlar-11 {
+  float: left;
+  width: 1100px;
+  height: 100vh; }
+
+.col-xxlar-11 {
+  float: left;
+  width: 1283.3333333333px;
+  height: 100vh; }
+
+.col-xxxlar-11 {
+  float: left;
+  width: 1466.6666666667px;
+  height: 100vh; }
+
+.col-xxxsm-12 {
+  float: left;
+  width: 375px;
+  height: 100vh; }
+
+.col-xxsm-12 {
+  float: left;
+  width: 480px;
+  height: 100vh; }
+
+.col-xsm-12 {
+  float: left;
+  width: 667px;
+  height: 100vh; }
+
+.col-sm-12 {
+  float: left;
+  width: 768px;
+  height: 100vh; }
+
+.col-med-12 {
+  float: left;
+  width: 960px;
+  height: 100vh; }
+
+.col-lar-12 {
+  float: left;
+  width: 1024px;
+  height: 100vh; }
+
+.col-xlar-12 {
+  float: left;
+  width: 1200px;
+  height: 100vh; }
+
+.col-xxlar-12 {
+  float: left;
+  width: 1400px;
+  height: 100vh; }
+
+.col-xxxlar-12 {
+  float: left;
+  width: 1600px;
   height: 100vh; }
 
 .w-1 {

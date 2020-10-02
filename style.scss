@@ -35,11 +35,26 @@ table {
 	border-spacing: 0;
 }
 
+* {
+  box-sizing: border-box;
+}
+
 $dark: rgb(44, 39, 39);
 $light: rgb(196, 189, 189);
 $info: rgb(85, 85, 238);
 $danger: rgb(250, 15, 15);
 $success: rgb(61, 224, 61);
+$grid--breakpoints: (
+  'xxxsm': 375px,
+  'xxsm':  480px,
+  'xsm':   667px,
+  'sm':    768px,
+  'med':   960px,
+  'lar':    1024px,
+  'xlar':   1200px,
+  'xxlar':  1400px,
+  'xxxlar': 1600px,
+);
 
 .row {
   display: flex;
@@ -49,11 +64,13 @@ $success: rgb(61, 224, 61);
 }
 
 @for $i from 1 through 12 {
-  .col-#{$i} { 
-    float: left;
-    width: 100%/12 * $i;
-    height: 100vh;
-  }
+  @each $col, $width in $grid--breakpoints {
+    .col-#{$col}-#{$i} { 
+      float: left;
+      width: $width/12 * $i;
+      height: 100vh;
+    }
+  }  
 }
 
 @for $i from 1 through 4 {
