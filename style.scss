@@ -56,19 +56,25 @@ $grid--breakpoints: (
   'xxxlar': 1600px,
 );
 
+$gutter-size:(25px);
+
 .row {
   display: flex;
+  width: 100%;
+  justify-content: space-between;
   flex-wrap: wrap;
-  margin-right: -15px;
-  margin-left: -15px;
+  padding: 10px;
 }
 
 @mixin createCol() {
   @each $name, $value in $grid--breakpoints {
     @media screen and (min-width:$value){
       @for $i from 1 through 12 {
-        &.#{$name}-#{$i}{
-          width:((100% / 12) * $i);
+        &-#{$name}-#{$i}{
+          float: left;
+          margin: 5px;
+          height: 100vh;
+          width: calc(#{100% / 12 * $i} - #{$gutter-size / 12 * (12 - $i)});
         }
       }  
     }
