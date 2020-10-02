@@ -182,11 +182,13 @@ $fixed:(top, bottom);
     .fixed-#{$i} {
       position: fixed;
       top: 0;
+      z-index: 999;
     }
   } @else if $i == bottom {
     .fixed-#{$i} {
       position: fixed;
       bottom: 0;
+      z-index: 999;
     }
   }  
 }
