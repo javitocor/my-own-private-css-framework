@@ -90,28 +90,28 @@ $margin:(top, right, bottom, left);
     @for $j from 1 through 6 {
       $base: 0.5;
       .mt-#{$j} {
-        margin: $base * $j + 0rem;
+        margin-top: $base * $j + 0rem;
       }
     }
   } @else if $i == right {
     @for $j from 1 through 6 {
       $base: 0.5;
       .mr-#{$j} {
-        margin: $base * $j + 0rem;
+        margin-right: $base * $j + 0rem;
       }
     }
   } @else if $i == bottom {
     @for $j from 1 through 6 {
       $base: 0.5;
       .mb-#{$j} {
-        margin: $base * $j + 0rem;
+        margin-bottom: $base * $j + 0rem;
       }
     }
   } @else if $i == left {
     @for $j from 1 through 6 {
       $base: 0.5;
       .ml-#{$j} {
-        margin: $base * $j + 0rem;
+        margin-left: $base * $j + 0rem;
       }
     }
   } @else {
@@ -119,6 +119,47 @@ $margin:(top, right, bottom, left);
       $base: 0.5;
       .m-#{$j} {
         margin: $base * $j + 0rem;
+      }
+    }
+  }
+}
+
+$padding:(top, right, bottom, left);
+
+@each $i in $padding {
+  @if $i == top {
+    @for $j from 1 through 6 {
+      $base: 0.5;
+      .pt-#{$j} {
+        padding-top: $base * $j + 0rem;
+      }
+    }
+  } @else if $i == right {
+    @for $j from 1 through 6 {
+      $base: 0.5;
+      .pr-#{$j} {
+        padding-right: $base * $j + 0rem;
+      }
+    }
+  } @else if $i == bottom {
+    @for $j from 1 through 6 {
+      $base: 0.5;
+      .pb-#{$j} {
+        padding-bottom: $base * $j + 0rem;
+      }
+    }
+  } @else if $i == left {
+    @for $j from 1 through 6 {
+      $base: 0.5;
+      .pl-#{$j} {
+        padding-left: $base * $j + 0rem;
+      }
+    }
+  } @else {
+    @for $j from 1 through 6 {
+      $base: 0.5;
+      .p-#{$j} {
+        padding: $base * $j + 0rem;
       }
     }
   }
