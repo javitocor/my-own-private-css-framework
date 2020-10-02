@@ -1140,4 +1140,28 @@ table {
 .border-left-none {
   border-left-style: none; }
 
+.text-decoration-none {
+  text-decoration: none; }
+.text-decoration-underline {
+  text-decoration: underline; }
+.text-decoration-overline {
+  text-decoration: overline; }
+.text-decoration-line-through {
+  text-decoration: line-through; }
+
+.text-decor-solid {
+  text-decoration-style: solid; }
+
+.text-decor-double {
+  text-decoration-style: double; }
+
+.text-decor-wavy {
+  text-decoration-style: wavy; }
+
+.text-decor-dotted {
+  text-decoration-style: dotted; }
+
+.text-decor-dashed {
+  text-decoration-style: dashed; }
+
 /*# sourceMappingURL=style.css.map */

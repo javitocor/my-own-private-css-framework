@@ -84,6 +84,12 @@ $gutter-size:(25px);
   @include createCol;
 }
 
+.nav {
+  display: flex;
+  justify-content: space-between;
+  align-content: center;
+}
+
 @for $i from 1 through 4 {
   .w-#{$i * 25} { 
     width: 25% * $i;
