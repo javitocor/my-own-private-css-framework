@@ -4,8 +4,6 @@ $info: rgb(85, 85, 238);
 $danger: rgb(250, 15, 15);
 $success: rgb(61, 224, 61);
 
-$colors:(dark: rgb(44, 39, 39), light: rgb(196, 189, 189), info: rgb(85, 85, 238), danger: rgb(250, 15, 15), success: rgb(61, 224, 61));
-
 @for $i from 1 through 12 {
   .col-#{$i} { 
     float: left;
@@ -33,6 +31,8 @@ $colors:(dark: rgb(44, 39, 39), light: rgb(196, 189, 189), info: rgb(85, 85, 238
       font-size: $fontsize + 0px;
     }
 }
+
+$colors:(dark: rgb(44, 39, 39), light: rgb(196, 189, 189), info: rgb(85, 85, 238), danger: rgb(250, 15, 15), success: rgb(61, 224, 61));
 
 @each $name, $color in $colors {
   .bg-#{$name} {
@@ -68,4 +68,21 @@ $float:(right, left, none);
   .float-#{$i} {
     float: $i;
   }
+}
+
+$fixed:(top, bottom);
+
+@each $i in $fixed {
+  @if $i == top {
+    .fixed-#{$i} {
+      position: fixed;
+      top: 0;
+    }
+  } @else if $i == bottom {
+    .fixed-#{$i} {
+      position: fixed;
+      bottom: 0;
+    }
+  }
+  
 }
