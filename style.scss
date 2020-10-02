@@ -83,7 +83,7 @@ $fixed:(top, bottom);
   }  
 }
 
-$margin:(top, right, bottom, left);
+$margin:(top, right, bottom, left, main);
 
 @each $i in $margin {
   @if $i == top {
@@ -124,7 +124,7 @@ $margin:(top, right, bottom, left);
   }
 }
 
-$padding:(top, right, bottom, left);
+$padding:(top, right, bottom, left, main);
 
 @each $i in $padding {
   @if $i == top {

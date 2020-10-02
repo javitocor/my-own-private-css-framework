@@ -252,6 +252,24 @@
 .ml-6 {
   margin-left: 3rem; }
 
+.m-1 {
+  margin: 0.5rem; }
+
+.m-2 {
+  margin: 1rem; }
+
+.m-3 {
+  margin: 1.5rem; }
+
+.m-4 {
+  margin: 2rem; }
+
+.m-5 {
+  margin: 2.5rem; }
+
+.m-6 {
+  margin: 3rem; }
+
 .pt-1 {
   padding-top: 0.5rem; }
 
@@ -323,5 +341,23 @@
 
 .pl-6 {
   padding-left: 3rem; }
+
+.p-1 {
+  padding: 0.5rem; }
+
+.p-2 {
+  padding: 1rem; }
+
+.p-3 {
+  padding: 1.5rem; }
+
+.p-4 {
+  padding: 2rem; }
+
+.p-5 {
+  padding: 2.5rem; }
+
+.p-6 {
+  padding: 3rem; }
 
 /*# sourceMappingURL=style.css.map */
