@@ -63,14 +63,20 @@ $grid--breakpoints: (
   margin-left: -15px;
 }
 
-@for $i from 1 through 12 {
-  @each $col, $width in $grid--breakpoints {
-    .col-#{$col}-#{$i} { 
-      float: left;
-      width: $width/12 * $i;
-      height: 100vh;
+@mixin createCol() {
+  @each $name, $value in $grid--breakpoints {
+    @media screen and (min-width:$value){
+      @for $i from 1 through 12 {
+        &.#{$name}-#{$i}{
+          width:((100% / 12) * $i);
+        }
+      }  
     }
-  }  
+  }
+}
+
+.cell {
+  @include createCol;
 }
 
 @for $i from 1 through 4 {
@@ -106,18 +112,29 @@ $colors:(dark: $dark, light: $light, info: $info, danger: $danger, success: $suc
 
 $font-weight:(light: 200, normal: 400, bold: 700, bolder: 900);
 
-@each $name, $weight in $font-weight {
-  .font-weight-#{$name} {
-    font-weight: $weight;
+@mixin font-weight($font-weight) {
+  @each $name, $weight in $font-weight {
+    &-#{$name} {
+      font-weight: $weight;
+    }
   }
+}
+.font-weight {
+  @include font-weight($font-weight);
 }
 
 $display:(flex, block, inline, inline-block, table, grid, none, inline-flex, table-cell);
 
-@each $i in $display {
-  .d-#{$i} {
-    display: $i;
+@mixin display($disp) {
+  @each $i in $display {
+    &-#{$i} {
+      display: $i;
+    }
   }
+}
+
+.d {
+  @include display($display);
 }
 
 $float:(right, left, none);
@@ -146,44 +163,51 @@ $fixed:(top, bottom);
 
 $margin:(top, right, bottom, left, main);
 
-@each $i in $margin {
-  @if $i == top {
-    @for $j from 1 through 6 {
-      $base: 0.5;
-      .mt-#{$j} {
-        margin-top: $base * $j + 0rem;
+@mixin marPad($margin) {
+  @each $i in $margin {
+    @if $i == top {
+      @for $j from 1 through 6 {
+        $base: 0.5;
+        &t-#{$j} {
+          margin-top: $base * $j + 0rem;
+        }
       }
-    }
-  } @else if $i == right {
-    @for $j from 1 through 6 {
-      $base: 0.5;
-      .mr-#{$j} {
-        margin-right: $base * $j + 0rem;
+    } @else if $i == right {
+      @for $j from 1 through 6 {
+        $base: 0.5;
+        &r-#{$j} {
+          margin-right: $base * $j + 0rem;
+        }
       }
-    }
-  } @else if $i == bottom {
-    @for $j from 1 through 6 {
-      $base: 0.5;
-      .mb-#{$j} {
-        margin-bottom: $base * $j + 0rem;
+    } @else if $i == bottom {
+      @for $j from 1 through 6 {
+        $base: 0.5;
+        &b-#{$j} {
+          margin-bottom: $base * $j + 0rem;
+        }
       }
-    }
-  } @else if $i == left {
-    @for $j from 1 through 6 {
-      $base: 0.5;
-      .ml-#{$j} {
-        margin-left: $base * $j + 0rem;
+    } @else if $i == left {
+      @for $j from 1 through 6 {
+        $base: 0.5;
+        &l-#{$j} {
+          margin-left: $base * $j + 0rem;
+        }
       }
-    }
-  } @else {
-    @for $j from 1 through 6 {
-      $base: 0.5;
-      .m-#{$j} {
-        margin: $base * $j + 0rem;
+    } @else {
+      @for $j from 1 through 6 {
+        $base: 0.5;
+        &-#{$j} {
+          margin: $base * $j + 0rem;
+        }
       }
     }
   }
 }
+
+.m {
+  @include marPad($margin);
+}
+
 
 $padding:(top, right, bottom, left, main);
 
