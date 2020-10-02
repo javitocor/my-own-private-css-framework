@@ -59,16 +59,27 @@ $grid--breakpoints: (
 $gutter-size:(25px);
 
 @each $name, $value in $grid--breakpoints {
-  @media screen and (min-width:$value){
+  @if $value == 0 {
     .container {
-      max-width: $value;
-      margin: 0 auto;
-      &-fluid {
+      max-width: 100%;
+      margin: 0 auto;      
+    }
+    .container-fluid {
+      margin: 0;
+      max-width: 100%;
+    }
+  } @else {
+    @media screen and (min-width:$value){
+      .container {
+        max-width: $value;
+        margin: 0 auto;        
+      }
+      .container-fluid {
         margin: 0;
         max-width: 100%;
       }
     }
-  }
+  }  
 }
 
 
