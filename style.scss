@@ -34,8 +34,6 @@ table {
   border-collapse: collapse;
 	border-spacing: 0;
 }
-	
-
 
 $dark: rgb(44, 39, 39);
 $light: rgb(196, 189, 189);
@@ -224,3 +222,52 @@ $text-align:(center, right, left, start, end, initial, inherit, capitalize, lowe
     }
   }  
 }
+
+$border-style:(dotted, dashed, solid, double, groove, ridge, inset, outset, none);
+$border:(top, right, bottom, left);
+
+.border {
+  border: 1px solid black;
+}
+
+@each $i in $border-style {
+  .border-#{$i} {
+    border-style: $i;
+  }
+}
+
+@each $i in $colors {
+  .border-#{$i} {
+    border-color: $i;
+  }
+}
+
+@each $i in $border{
+  @if $i == top {
+    .border-#{$i} {
+      border-top: none;
+    }
+  } @else if $i == right {
+    .border-#{$i} {
+      border-right: none;
+    }
+  } @else if $i == bottom {
+    .border-#{$i} {
+      border-bottom: none;
+    }
+  } @else if $i == left {
+    .border-#{$i} {
+      border-left: none;
+    }
+  }
+}
+
+@for $i from 1 through 6 {
+  $base: 1;
+  $width: $base + $i;
+  .border-#{$i} {
+    border-width: $width;
+  }
+}
+
+

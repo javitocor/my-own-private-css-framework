@@ -431,4 +431,79 @@ table {
 .text-uppercase {
   text-transform: uppercase; }
 
+.border {
+  border: 1px solid black; }
+
+.border-dotted {
+  border-style: dotted; }
+
+.border-dashed {
+  border-style: dashed; }
+
+.border-solid {
+  border-style: solid; }
+
+.border-double {
+  border-style: double; }
+
+.border-groove {
+  border-style: groove; }
+
+.border-ridge {
+  border-style: ridge; }
+
+.border-inset {
+  border-style: inset; }
+
+.border-outset {
+  border-style: outset; }
+
+.border-none {
+  border-style: none; }
+
+.border-dark #2c2727 {
+  border-color: dark #2c2727; }
+
+.border-light #c4bdbd {
+  border-color: light #c4bdbd; }
+
+.border-info #5555ee {
+  border-color: info #5555ee; }
+
+.border-danger #fa0f0f {
+  border-color: danger #fa0f0f; }
+
+.border-success #3de03d {
+  border-color: success #3de03d; }
+
+.border-top {
+  border-top: none; }
+
+.border-right {
+  border-right: none; }
+
+.border-bottom {
+  border-bottom: none; }
+
+.border-left {
+  border-left: none; }
+
+.border-1 {
+  border-width: 2; }
+
+.border-2 {
+  border-width: 3; }
+
+.border-3 {
+  border-width: 4; }
+
+.border-4 {
+  border-width: 5; }
+
+.border-5 {
+  border-width: 6; }
+
+.border-6 {
+  border-width: 7; }
+
 /*# sourceMappingURL=style.css.map */
