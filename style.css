@@ -587,6 +587,27 @@ table {
     height: 100vh;
     width: calc(100% - 0px); } }
 
+.nav {
+  display: flex;
+  justify-content: space-between;
+  align-content: center; }
+
+.flex-center {
+  display: flex;
+  justify-content: center; }
+
+.flex-space-evenly {
+  display: flex;
+  justify-content: space-evenly; }
+
+.flex-space-between {
+  display: flex;
+  justify-content: space-between; }
+
+.flex-space-around {
+  display: flex;
+  justify-content: space-around; }
+
 .w-25 {
   width: 25%; }
 
@@ -698,11 +719,13 @@ table {
 
 .fixed-top {
   position: fixed;
-  top: 0; }
+  top: 0;
+  z-index: 999; }
 
 .fixed-bottom {
   position: fixed;
-  bottom: 0; }
+  bottom: 0;
+  z-index: 999; }
 
 .mt-1 {
   margin-top: 0.5rem; }
