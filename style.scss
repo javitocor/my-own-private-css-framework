@@ -57,6 +57,20 @@ $grid--breakpoints: (
 );
 $gutter-size:(25px);
 
+@each $name, $value in $grid--breakpoints {
+  @media screen and (min-width:$value){
+    .container {
+      max-width: $value;
+      margin: 0 auto;
+      &-fluid {
+        margin: 0;
+        max-width: 100%;
+      }
+    }
+  }
+}
+
+
 .row {
   display: flex;
   width: 100%;
