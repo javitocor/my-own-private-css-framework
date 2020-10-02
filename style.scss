@@ -243,23 +243,51 @@ $border:(top, right, bottom, left);
 }
 
 @each $i in $border{
-  @if $i == top {
-    .border-#{$i} {
-      border-top: none;
+  @for $j from 0 through 6 {    
+  $base: 1;
+  $width: $base + $j;
+    @if $i == top {
+      @if $j == 0 {
+        .border-#{$i}-#{$j} {
+          border-top: none;
+        }
+      } @else {
+        .border-#{$i}-#{$j} {
+          border-top-width: $width + 0px;
+        }
+      }      
+    } @else if $i == right {
+      @if $j == 0 {
+        .border-#{$i}-#{$j} {
+          border-right: none;
+        }
+      } @else {
+        .border-#{$i}-#{$j} {
+          border-right-width: $width + 0px;
+        }
+      }
+    } @else if $i == bottom {
+      @if $j == 0 {
+        .border-#{$i}-#{$j} {
+          border-bottom: none;
+        }
+      } @else {
+        .border-#{$i}-#{$j} {
+          border-bottom-width: $width + 0px;
+        }
+      }
+    } @else if $i == left {
+      @if $j == 0 {
+        .border-#{$i}-#{$j} {
+          border-left: none;
+        }
+      } @else {
+        .border-#{$i}-#{$j} {
+          border-left-width: $width + 0px;
+        }
+      }
     }
-  } @else if $i == right {
-    .border-#{$i} {
-      border-right: none;
-    }
-  } @else if $i == bottom {
-    .border-#{$i} {
-      border-bottom: none;
-    }
-  } @else if $i == left {
-    .border-#{$i} {
-      border-left: none;
-    }
-  }
+  }  
 }
 
 @for $i from 1 through 6 {
@@ -267,6 +295,14 @@ $border:(top, right, bottom, left);
   $width: $base + $i;
   .border-#{$i} {
     border-width: $width;
+  }
+}
+
+@each $i in $border{
+  @each $j in $border-style {
+    .border-#{$i}-#{$j} {
+      border-#{$i}-style: #{$j};
+    }
   }
 }
 
