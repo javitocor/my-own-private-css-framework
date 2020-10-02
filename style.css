@@ -389,4 +389,25 @@ table {
 .p-6 {
   padding: 3rem; }
 
+.text-center {
+  text-align: center; }
+
+.text-right {
+  text-align: right; }
+
+.text-left {
+  text-align: left; }
+
+.text-start {
+  text-align: start; }
+
+.text-end {
+  text-align: end; }
+
+.text-initial {
+  text-align: initial; }
+
+.text-inherit {
+  text-align: inherit; }
+
 /*# sourceMappingURL=style.css.map */

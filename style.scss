@@ -203,3 +203,11 @@ $padding:(top, right, bottom, left, main);
     }
   }
 }
+
+$text-align:(center, right, left, start, end, initial, inherit);
+
+@each $i in $text-align {
+  .text-#{$i} {
+    text-align: $i;
+  }
+}
