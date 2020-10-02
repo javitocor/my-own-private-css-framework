@@ -236,9 +236,9 @@ $border:(top, right, bottom, left);
   }
 }
 
-@each $i in $colors {
-  .border-#{$i} {
-    border-color: $i;
+@each $name, $color in $colors {
+  .border-#{$name} {
+    border-color: $color;
   }
 }
 

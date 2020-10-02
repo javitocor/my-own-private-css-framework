@@ -461,20 +461,20 @@ table {
 .border-none {
   border-style: none; }
 
-.border-dark #2c2727 {
-  border-color: dark #2c2727; }
+.border-dark {
+  border-color: #2c2727; }
 
-.border-light #c4bdbd {
-  border-color: light #c4bdbd; }
+.border-light {
+  border-color: #c4bdbd; }
 
-.border-info #5555ee {
-  border-color: info #5555ee; }
+.border-info {
+  border-color: #5555ee; }
 
-.border-danger #fa0f0f {
-  border-color: danger #fa0f0f; }
+.border-danger {
+  border-color: #fa0f0f; }
 
-.border-success #3de03d {
-  border-color: success #3de03d; }
+.border-success {
+  border-color: #3de03d; }
 
 .border-top {
   border-top: none; }
