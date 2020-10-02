@@ -4,9 +4,7 @@ $info: rgb(85, 85, 238);
 $danger: rgb(250, 15, 15);
 $success: rgb(61, 224, 61);
 
-$colors:($dark, $light, $info, $danger, $success);
-
-.a {background-color: red;height: 150px;width: 100%;}
+$colors:(dark: rgb(44, 39, 39), light: rgb(196, 189, 189), info: rgb(85, 85, 238), danger: rgb(250, 15, 15), success: rgb(61, 224, 61));
 
 @for $i from 1 through 12 {
   .col-#{$i} { 
@@ -16,8 +14,20 @@ $colors:($dark, $light, $info, $danger, $success);
   }
 }
 
+@for $i from 1 through 4 {
+  .w-#{$i} { 
+    width: 25% * $i;
+  }
+}
+
+@for $i from 1 through 4 {
+  .h-#{$i} { 
+    height: 25% * $i;
+  }
+}
+
 @for $i from 1 through 6 {
-  $base: 4;
+  $base: 8;
   $fontsize: $base * $i;
   .font-#{$fontsize} { 
       font-size: $fontsize + 0px;
@@ -30,8 +40,32 @@ $colors:($dark, $light, $info, $danger, $success);
   }
 }
 
-@each $color in $colors {
-  .text-#{$color} {
+@each $name, $color in $colors {
+  .text-#{$name} {
    color: $color;
+  }
+}
+
+$font-weight:(light: 200, normal: 400, bold: 700, bolder: 900);
+
+@each $name, $weight in $font-weight {
+  .font-weight-#{$name} {
+    font-weight: $weight;
+  }
+}
+
+$display:(flex, block, inline, inline-block, table, grid, none);
+
+@each $i in $display {
+  .d-#{$i} {
+    display: $i;
+  }
+}
+
+$float:(right, left, none);
+
+@each $i in $float {
+  .float-#{$i} {
+    float: $i;
   }
 }
