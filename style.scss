@@ -90,6 +90,25 @@ $gutter-size:(25px);
   align-content: center;
 }
 
+.flex-center{
+  display:flex;
+  justify-content: center;
+}
+.flex-space-evenly{
+  display:flex;
+  justify-content: space-evenly;
+}
+.flex-space-between{
+  display:flex;
+  justify-content: space-between;
+}
+
+.flex-space-around{
+  display:flex;
+  justify-content: space-around;
+}
+
+
 @for $i from 1 through 4 {
   .w-#{$i * 25} { 
     width: 25% * $i;
