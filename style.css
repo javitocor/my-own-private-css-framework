@@ -30,6 +30,13 @@ table {
 * {
   box-sizing: border-box; }
 
+@media screen and (min-width: 0) {
+  .container {
+    max-width: 0;
+    margin: 0 auto; }
+    .container-fluid {
+      margin: 0;
+      max-width: 100%; } }
 @media screen and (min-width: 375px) {
   .container {
     max-width: 375px;
@@ -100,6 +107,66 @@ table {
   flex-wrap: wrap;
   padding: 10px; }
 
+.cell-1 {
+  float: left;
+  margin: 5px;
+  height: 100vh;
+  width: calc(8.3333333333% - 22.9166666667px); }
+.cell-2 {
+  float: left;
+  margin: 5px;
+  height: 100vh;
+  width: calc(16.6666666667% - 20.8333333333px); }
+.cell-3 {
+  float: left;
+  margin: 5px;
+  height: 100vh;
+  width: calc(25% - 18.75px); }
+.cell-4 {
+  float: left;
+  margin: 5px;
+  height: 100vh;
+  width: calc(33.3333333333% - 16.6666666667px); }
+.cell-5 {
+  float: left;
+  margin: 5px;
+  height: 100vh;
+  width: calc(41.6666666667% - 14.5833333333px); }
+.cell-6 {
+  float: left;
+  margin: 5px;
+  height: 100vh;
+  width: calc(50% - 12.5px); }
+.cell-7 {
+  float: left;
+  margin: 5px;
+  height: 100vh;
+  width: calc(58.3333333333% - 10.4166666667px); }
+.cell-8 {
+  float: left;
+  margin: 5px;
+  height: 100vh;
+  width: calc(66.6666666667% - 8.3333333333px); }
+.cell-9 {
+  float: left;
+  margin: 5px;
+  height: 100vh;
+  width: calc(75% - 6.25px); }
+.cell-10 {
+  float: left;
+  margin: 5px;
+  height: 100vh;
+  width: calc(83.3333333333% - 4.1666666667px); }
+.cell-11 {
+  float: left;
+  margin: 5px;
+  height: 100vh;
+  width: calc(91.6666666667% - 2.0833333333px); }
+.cell-12 {
+  float: left;
+  margin: 5px;
+  height: 100vh;
+  width: calc(100% - 0px); }
 @media screen and (min-width: 375px) {
   .cell-xxxsm-1 {
     float: left;

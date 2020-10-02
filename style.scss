@@ -45,6 +45,7 @@ $info: rgb(85, 85, 238);
 $danger: rgb(250, 15, 15);
 $success: rgb(61, 224, 61);
 $grid--breakpoints: (
+  '0': 0,
   'xxxsm': 375px,
   'xxsm':  480px,
   'xsm':   667px,
@@ -81,16 +82,27 @@ $gutter-size:(25px);
 
 @mixin createCol() {
   @each $name, $value in $grid--breakpoints {
-    @media screen and (min-width:$value){
+    @if $value == 0 {
       @for $i from 1 through 12 {
-        &-#{$name}-#{$i}{
+        &-#{$i}{
           float: left;
           margin: 5px;
           height: 100vh;
           width: calc(#{100% / 12 * $i} - #{$gutter-size / 12 * (12 - $i)});
         }
-      }  
-    }
+      } 
+    } @else {
+      @media screen and (min-width:$value){
+        @for $i from 1 through 12 {
+          &-#{$name}-#{$i}{
+            float: left;
+            margin: 5px;
+            height: 100vh;
+            width: calc(#{100% / 12 * $i} - #{$gutter-size / 12 * (12 - $i)});
+          }
+        }  
+      }
+    }    
   }
 }
 
